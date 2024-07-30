@@ -1,0 +1,51 @@
+Sistema de Empréstimo e Manutenção de Materiais
+Este é um projeto para gerenciar o empréstimo e a manutenção de materiais, desenvolvido com HTML, CSS e JavaScript. Ele permite registrar empréstimos de materiais, exibir uma lista de empréstimos registrados e gerenciar a manutenção desses materiais, incluindo a aprovação e a recusa de devoluções.
+
+Funcionalidades
+Registro de Empréstimos: Permite registrar empréstimos de materiais, especificando o nome do solicitante, material, data e hora do empréstimo, técnico responsável e itens do kit.
+Visualização de Empréstimos: Exibe uma lista de empréstimos registrados.
+Manutenção de Empréstimos: Permite gerenciar a devolução dos materiais, incluindo a aprovação e a recusa com motivo.
+Estrutura do Projeto
+index.html: Página principal para registrar empréstimos.
+maintenance.html: Página para gerenciar a manutenção dos empréstimos.
+styles.css: Arquivo de estilo para o projeto.
+script.js: Script para gerenciar o registro e a exibição dos empréstimos.
+maintenance.js: Script para gerenciar a manutenção dos empréstimos.
+Como Usar
+Clone o repositório para o seu ambiente local:
+
+bash
+Copiar código
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Navegue até o diretório do projeto:
+
+bash
+Copiar código
+cd seu-repositorio
+Abra o arquivo index.html em um navegador para acessar a página de registro de empréstimos.
+
+Preencha o formulário de registro de empréstimos e clique em "Registrar Empréstimo" para adicionar o empréstimo à lista.
+
+Navegue até maintenance.html para gerenciar a manutenção dos empréstimos.
+
+Clique em "Importar Registros de Empréstimos" para importar os registros da página de registro.
+
+Preencha a data e hora de devolução para cada empréstimo, aprove ou recuse a devolução conforme necessário.
+
+Tecnologias Utilizadas
+HTML
+CSS
+JavaScript
+Contribuindo
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+Faça um fork do projeto
+Crie uma branch para sua feature (git checkout -b feature/nova-feature)
+Commit suas mudanças (git commit -m 'Adiciona nova feature')
+Push para a branch (git push origin feature/nova-feature)
+Abra um pull request
+Licença
+Este projeto está licenciado sob a MIT License - veja o arquivo LICENSE para mais detalhes.
+
+Agradecimentos
+Pico.css - Framework CSS utilizado no projeto
