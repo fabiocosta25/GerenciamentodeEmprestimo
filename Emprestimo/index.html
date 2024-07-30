@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Empréstimo de Materiais</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <img src="assets/images/Logotipo_da_Rede_Vanguarda_Enhanced.png" alt="Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                <strong>Empréstimos</strong>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="maintenance.html">Manutenção</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section>
+            <h2 class="center">Registro de Empréstimo de Materiais</h2>
+            <form id="loanForm">
+                <div class="form-group">
+                    <label for="name">Nome do Solicitante:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="material">Material:</label>
+                    <select id="material" name="material" required onchange="updateImage()">
+                        <option value="">Selecione o Material</option>
+                        <option value="MOJO 01">MOJO 01</option>
+                        <option value="MOJO 02">MOJO 02</option>
+                        <option value="MOJO 03">MOJO 03</option>
+                        <option value="MOJO 04">MOJO 04</option>
+                        <option value="MOJO 05">MOJO 05</option>
+                        <option value="KIT ALPHA 01">KIT ALPHA 01</option>
+                        <option value="KIT ALPHA 02">KIT ALPHA 02</option>
+                        <option value="KIT GO PRO 01">KIT GO PRO 01</option>
+                        <option value="KIT GO PRO 02">KIT GO PRO 02</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dateTime">Data e Hora de Empréstimo:</label>
+                    <input type="datetime-local" id="dateTime" name="dateTime" required>
+                </div>
+                <div class="form-group">
+                    <label for="technician">Técnico Responsável:</label>
+                    <input type="text" id="technician" name="technician" required>
+                </div>
+
+                <div id="kitContainer" class="kit-container" style="display: none;">
+                    <img id="materialImage" src="" alt="Imagem do Material" class="material-image">
+                    <div id="kitOptions" class="kit-options"></div>
+                </div>
+
+                <button type="submit">Registrar Empréstimo</button>
+            </form>
+        </section>
+
+        <section>
+            <h2 class="center">Empréstimos Registrados</h2>
+            <div class="table-container">
+                <table id="loanTable">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Material</th>
+                            <th>Data e Hora</th>
+                            <th>Técnico</th>
+                            <th>Itens do Kit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

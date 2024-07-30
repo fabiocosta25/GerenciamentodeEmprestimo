@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Manutenção de Empréstimos</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li>
+                <img src="assets/images/Logotipo_da_Rede_Vanguarda_Enhanced.png" alt="Logo" style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                <strong>Manutenção</strong>
+            </li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Empréstimos</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section>
+            <h2 class="center">Devolução dos Empréstimos</h2>
+            <button onclick="importLoans()">Importar Registros de Empréstimo</button>
+        </section>
+        <section>
+            <h2 class="center">Kit's em Empréstimo</h2>
+            <div class="buttons-container">
+                <button class="approve-button" onclick="approveSelected()">Aprovar</button>
+                <button class="deny-button" onclick="denySelected()">Reprovar</button>
+            </div>
+            <div class="table-container">
+                <table id="maintenanceTable">
+                    <thead>
+                        <tr>
+                            <th>Selecionar</th>
+                            <th>Nome</th>
+                            <th>Material</th>
+                            <th>Data e Hora de Empréstimo</th>
+                            <th>Data e Hora de Devolução</th>
+                            <th>Técnico</th>
+                            <th>Itens do Kit</th>
+                            <th>Ação</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <button onclick="downloadCSV()">Baixar CSV</button>
+        </section>
+    </main>
+    <script src="maintenance.js"></script>
+</body>
+</html>
